@@ -1,0 +1,99 @@
+/* General Styling */
+.homepage {
+    font-family: 'Arial', sans-serif;
+  }
+  
+  /* Section 1: Hero Section */
+  .hero-section {
+    background-color: #f7f7f7;
+    padding: 50px;
+    text-align: center;
+  }
+  
+  .hero-content h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+  
+  .hero-content p {
+    font-size: 18px;
+    color: #666;
+  }
+  
+  /* Section 2: Text and Image Side by Side */
+  .info-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    background-color: #fff;
+  }
+  
+  .info-container {
+    display: flex;
+    flex-wrap: wrap; /* Responsive wrapping */
+    max-width: 1200px;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .info-text {
+    flex: 1;
+    padding: 20px;
+  }
+  
+  .info-text h2 {
+    font-size: 28px;
+    margin-bottom: 15px;
+  }
+  
+  .info-text p {
+    font-size: 16px;
+    color: #666;
+  }
+  
+  .info-image {
+    flex: 1;
+    text-align: center;
+  }
+  
+  .info-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+  
+  /* Section 3: Contact Section */
+  .contact-section {
+    background-color: #f1f1f1;
+    padding: 50px;
+    text-align: center;
+  }
+  
+  .contact-section h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+  
+  .contact-section p {
+    font-size: 16px;
+    color: #666;
+  }
+  
+  /* Media Queries for Responsiveness */
+  @media (max-width: 768px) {
+    .info-container {
+      flex-direction: column; /* Stack the text and image on mobile view */
+    }
+  
+    .info-text, .info-image {
+      text-align: center;
+    }
+  
+    .info-image img {
+      max-width: 70%;
+      margin-top: 20px;
+    }
+  }
+  
